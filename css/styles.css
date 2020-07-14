@@ -1,6 +1,6 @@
 body {
     font-size: 16px;
-    background-color: #dafdff;
+    background-color: #e8feff;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -45,7 +45,7 @@ body {
 }
 ul li a{
     margin-bottom: -2px;
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
 #Chicken_nav:hover, #Sushi_nav:hover, #Beef_nav:hover{
     color: #00115f70;
