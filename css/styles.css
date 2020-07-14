@@ -1,0 +1,76 @@
+body {
+    font-size: 16px;
+    background-color: #dafdff;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* header */
+.navbar{
+    font-family: 'Playfair Display', serif;
+}
+
+.navbar-brand{
+    padding-top: 10px;
+    padding-left: 25px;
+    margin-bottom: 0px;
+}
+.navbar-brand h1{
+    color: #00115f;
+    font-size: 2.5em;
+}
+.navbar-brand a:hover, .navbar-brand a:focus{
+    text-decoration: none;
+}
+/* to expand the menu items to the edge (there should be a better way to do this)*/
+.navbar{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+#collapsable_nav{
+    margin-bottom: -6px;
+}
+@media (min-width: 992px) {
+    #collapsable_nav{
+        margin-right: 40px;
+    }
+}
+#menu_button{
+    margin-right: 25px;
+    margin-left: 25px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.navbar-light .navbar-nav .nav-link {/* text inside the menu */
+    color: #00115f;
+}
+ul li a{
+    margin-bottom: -2px;
+    font-size: 1.2em;
+}
+#Chicken_nav:hover, #Sushi_nav:hover, #Beef_nav:hover{
+    color: #00115f70;
+}
+
+/* button stuff */
+#menu_button:focus, #menu_button:hover{
+    border-color: rgba(0, 17, 95, 0.1);
+    background-color: #bbfcff6e;
+}
+.navbar-light .navbar-toggler {
+    border-color: rgba(0, 17, 95, 0.1);
+}
+.line_container{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    padding-left: 1px;
+    padding-right: 1px;
+}
+.line{
+    width: 100%;
+    float: left;
+    height: 2px;
+    background-color: rgba(0, 17, 95, 0.3);
+    margin-top: 6px;
+}
