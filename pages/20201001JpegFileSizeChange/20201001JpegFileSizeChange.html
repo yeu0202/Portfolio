@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kelvin's Portfolio</title>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/styles.css">
+    
+  </head>
+<body>
+  <header id="back_to_top">
+    <nav id="header-nav" class="navbar navbar-expand-lg navbar-light"> <!--navbar-expand-sm is to show in xs only-->
+      <a class="navbar-brand" href="../../index.html"><h1>Kelvin Yeung</h1></a>
+
+      <button id="menu_button" type="button" class="navbar-toggler" data-toggle="collapse" data-target="#collapsable_nav" aria-controls="collapsable_nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="line_container">
+            <span class="line"></span> 
+            <span class="line"></span> 
+            <span class="line"></span>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="collapsable_nav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a id="Chicken_nav" class="nav-link text-center" href="#chicken_row">Chicken</a>
+          </li>
+          <li class="nav-item text-center">
+            <a id="Beef_nav" class="nav-link" href="#beef_row">Beef</a>
+          </li>
+          <li class="nav-item text-center">
+            <a id="Sushi_nav" class="nav-link" href="#sushi_row">Sushi</a>
+          </li>
+        </ul>
+      </div> <!--navigation menu-->
+    </nav> <!--header-nav-->
+  </header>
+  
+  <div class="container-fluid">
+    <div class="row">
+      <h2 class="col-xs-12 col-sm-12 col-md-12">Jpeg File Size Change</h2>
+    </div>
+    <div class="row">
+      <h3 class="col-xs-12 col-sm-12 col-md-12">
+        This was a class taught by Carl where students experimented with jpeg compression.<br/>
+        I used Affinity Photo to change between levels in quality.
+      </h3>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12">
+        <h4>Original Image</h4>
+        <img src="resources/IMG_5988.png" alt="original image" width="806" height="455">
+        <div class="descriptionText">
+          Picture I took at a beach in Singapore.
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12">
+        <h4>JPG at 10 quality</h4>
+        <img src="resources/IMG_5988_10.jpg" alt="image quality 10" width="806" height="455">
+        <div class="descriptionText">
+          The loss in color quality can be noticed, especially in the clouds.
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12">
+        <h4>JPG at 4 quality</h4>
+        <img src="resources/IMG_5988_4.jpg" alt="image quality 4" width="806" height="455">
+        <div class="descriptionText">
+          Some color has been lost and turned into grayscale, and there are only several shades of colors left.
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12">
+        <h4>JPG at 0 quality</h4>
+        <img src="resources/IMG_5988_0.jpg" alt="image quality 0" width="806" height="455">
+        <div class="descriptionText">
+          Similar to the image at 4 quality, most colors are gone, a few shades are left. <br/>
+          Even more of the image is in grayscal compared to the image at 4 quality.
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12">
+        <h4>Additional comments</h4>
+        <img src="resources/qualityChange.png" alt="quality change image" width="801.5" height="620">
+        <div class="descriptionText">
+          I also noticed that when I zoomed in, details in the images are lost.<br/>
+          This was harder to notice as the initial image was large, but would be more noticable with smaller images.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div></div>
+  </footer>
+  <!-- <div><iframe src="https://drive.google.com/file/d/1abC488Ekj7RWE06sqOykEFvv8wjvtHXn/preview" width="1280" height="720"></iframe></div> need to change size depending on screen size -->
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="../../js/jquery-3.5.1.min.js"></script>
+  <script src="../../js/bootstrap.min.js"></script>
+  <script src="../../js/script.js"></script>
+</body>
+</html>

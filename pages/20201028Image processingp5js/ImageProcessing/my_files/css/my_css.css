@@ -1,0 +1,31 @@
+#all_text{
+    position: absolute;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+#title_text{
+    font-size: 30px;
+}
+#fps_text{
+    font-size: 14px;
+    margin-top: 10px;
+}
+#help_text{
+    font-size: 16px;
+    margin-top: 280px;
+}
+canvas{
+    position: absolute;
+    margin-left: 450px;
+    margin-top: -5px;
+}
+video{
+    position: absolute;
+    margin-left: 130px;
+    margin-top: -1160px;
+    width: 320px !important;
+    height: 240px !important;
+}
+h4{
+    margin-top: 1020px;
+}

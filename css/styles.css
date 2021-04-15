@@ -4,6 +4,47 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+
+/* body */
+h3{
+    font-size: 1.3rem;
+    padding-bottom: 10px;
+}
+/* 
+h3{
+    background-color: #5df7ff2a;
+} */
+
+.container-fluid{
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.row{
+    padding-bottom: 5px;
+}
+h4{
+    padding-top: 25px;
+}
+
+.descriptionText{
+    margin-top: 10px;
+}
+
+/* /body */
+
+
+/* footer */
+
+footer{
+    height: 150px;
+}
+
+/* /footer */
+
+
+
+
 /* header */
 .navbar{
     font-family: 'Playfair Display', serif;
@@ -12,7 +53,7 @@ body {
 .navbar-brand{
     padding-top: 10px;
     padding-left: 25px;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
 }
 .navbar-brand h1{
     color: #00115f;

@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kelvin's Portfolio</title>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/styles.css">
+    
+  </head>
+<body>
+  <header id="back_to_top">
+    <nav id="header-nav" class="navbar navbar-expand-lg navbar-light"> <!--navbar-expand-sm is to show in xs only-->
+      <a class="navbar-brand" href="../../index.html"><h1>Kelvin Yeung</h1></a>
+
+      <button id="menu_button" type="button" class="navbar-toggler" data-toggle="collapse" data-target="#collapsable_nav" aria-controls="collapsable_nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="line_container">
+            <span class="line"></span> 
+            <span class="line"></span> 
+            <span class="line"></span>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="collapsable_nav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a id="Chicken_nav" class="nav-link text-center" href="#chicken_row">Chicken</a>
+          </li>
+          <li class="nav-item text-center">
+            <a id="Beef_nav" class="nav-link" href="#beef_row">Beef</a>
+          </li>
+          <li class="nav-item text-center">
+            <a id="Sushi_nav" class="nav-link" href="#sushi_row">Sushi</a>
+          </li>
+        </ul>
+      </div> <!--navigation menu-->
+    </nav> <!--header-nav-->
+  </header>
+  
+  <div class="container-fluid">
+    <div class="row">
+      <h2 class="col-xs-12 col-sm-12 col-md-12">VR Trip</h2>
+    </div>
+    <div class="row">
+      <h3 class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        This is a VR project done for Peter's assessment 1. I worked in a group with Masha, Gaia, and James to make a futuristic VR experience in Unity. 
+        I learned how to make some 3D models, implemented some audio visualization, and implemented the movement of some objects in the game. I also edited some sections of the video.
+      </h3>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <h4>Project Video</h4>
+        <iframe width="960" height="540" src="https://www.youtube-nocookie.com/embed/IfpygDtNcdo"
+         title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="descriptionText">
+          The brief for this assessment was to design, develop, prototype, or propose an engaging experience, and document the whole process with a video.
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <h4>3d Models</h4>
+        <img src="resources/obj1maya.png" alt="obj1maya" width="597" height="373">
+        <img src="resources/obj1substance.png" alt="obj1substance" width="597" height="373">
+        <img src="resources/obj2maya.png" alt="obj2maya" width="597" height="373">
+        <img src="resources/obj2substance.png" alt="obj2substance" width="597" height="373">
+        <img src="resources/obj3maya.png" alt="obj3maya" width="597" height="373">
+        <img src="resources/obj3substance.png" alt="obj3substance" width="597" height="373">
+        <div class="descriptionText">
+          Gaia taught us how to use Maya and Substance to create and paint simple 3D objects. 
+          Here are some screenshots of some objects I made and painted.<br>
+          Some stuff I learned was creating the objects, how to stretch different faces to manipulate the shapes, 
+          UV mapping, and painting with smart textures. <br>
+          I found that creating these 3D objects more difficult and time consuming than I expected. 
+          This is probably partly due to the fact that it's my first time trying 3d modelling, 
+          but the amount of time spent just to create a simple building was quite long. <br>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <h4>Audio Visualization</h4>
+        <video width="812" height="440" controls>
+          <source src="resources/VRTripFFT.mov" type="video/mp4">
+          Your browser does not support this video.
+        </video>
+        <div class="descriptionText">
+          I learned how to create audio visualization in Unity from <a href="https://youtu.be/4Av788P9stk" target="_blank">a tutorial by Peer Play</a>.<br>
+          This created some cool effects that make the scene pulse with the music which I liked. 
+          You can see the audio visualization implemented in the project video at around 3:10.
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12">
+        <h4>Additional comments</h4>
+        <div class="descriptionText">
+          I learned a lot throughout the process of working on this project. I learned a little about audio visualization and 
+          had a go at 3d modelling.<br>
+          I think this project ended up being pretty good in terms of the skills and knowledge learned, and the final product also looks amazing.
+          I think that the project can certainly be improved with more time but we did the best with the time we were given.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div></div>
+  </footer>
+  <!-- <div><iframe src="https://drive.google.com/file/d/1abC488Ekj7RWE06sqOykEFvv8wjvtHXn/preview" width="1280" height="720"></iframe></div> need to change size depending on screen size -->
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="../../js/jquery-3.5.1.min.js"></script>
+  <script src="../../js/bootstrap.min.js"></script>
+  <script src="../../js/script.js"></script>
+</body>
+</html>

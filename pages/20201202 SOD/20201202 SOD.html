@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kelvin's Portfolio</title>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/styles.css">
+    
+  </head>
+<body>
+  <header id="back_to_top">
+    <nav id="header-nav" class="navbar navbar-expand-lg navbar-light"> <!--navbar-expand-sm is to show in xs only-->
+      <a class="navbar-brand" href="../../index.html"><h1>Kelvin Yeung</h1></a>
+
+      <button id="menu_button" type="button" class="navbar-toggler" data-toggle="collapse" data-target="#collapsable_nav" aria-controls="collapsable_nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="line_container">
+            <span class="line"></span> 
+            <span class="line"></span> 
+            <span class="line"></span>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="collapsable_nav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a id="Chicken_nav" class="nav-link text-center" href="#chicken_row">Chicken</a>
+          </li>
+          <li class="nav-item text-center">
+            <a id="Beef_nav" class="nav-link" href="#beef_row">Beef</a>
+          </li>
+          <li class="nav-item text-center">
+            <a id="Sushi_nav" class="nav-link" href="#sushi_row">Sushi</a>
+          </li>
+        </ul>
+      </div> <!--navigation menu-->
+    </nav> <!--header-nav-->
+  </header>
+  
+  <div class="container-fluid">
+    <div class="row">
+      <h2 class="col-xs-12 col-sm-12 col-md-12">Small Object of Delight (SOD)</h2>
+    </div>
+    <div class="row">
+      <h3 class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        This was the first project in Magnus's class. I explored playing around with camera filters and video processing, and interesting ways to make them fun to interact with.
+        The first part of this project was made in p5.js, but due to performance issues I changed to using OpenCV. <br>
+        Using OpenCV was new to me and I used it in Python, which I wasn't too familiar with so it was a big learning experience for me.
+      </h3>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <h4>Inspiration</h4>
+        <a href="https://openprocessing.org/sketch/804219" target="_blank"><img src="resources/Inspiration1.png" alt="Inspiration1" width="255" height="255"></a>
+        <a href="https://openprocessing.org/sketch/971813" target="_blank"><img src="resources/Inspiration2.png" alt="Inspiration2" width="258" height="255"></a>
+        <a href="https://openprocessing.org/sketch/399409" target="_blank"><img src="resources/Inspiration3.png" alt="Inspiration3" width="204" height="255"></a>
+        <a href="https://openprocessing.org/sketch/950466" target="_blank"><img src="resources/Inspiration4.png" alt="Inspiration4" width="342" height="255"></a>
+        <div class="descriptionText">
+          These are some of the p5.js projects that inspired me to work on camera filters and video processing. Clicking on the images brings you to the openprocessing page of that project.
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <h4>Learning OpenCV</h4>
+        <a href="https://youtu.be/WQeoO7MI0Bs" target="_blank"><img src="resources/youtubeScreenshot.png" alt="youtubeScreenshot" width="470" height="350"></a>
+        <img src="resources/tutorialFinished.png" alt="tutorialFinished" width="583" height="350">
+        <div class="descriptionText">
+          I followed a 3 hour long youtube tutorial by <a href="https://www.youtube.com/channel/UCYUjYU5FveRAscQ8V21w81A" target="_blank">Murtaza's Workshop</a>. 
+          I learned the basics of manipulating images and video using OpenCV from this extremely helpful tutorial. 
+          The second image is a screenshot I made after completing most of the tutorial sections that I needed.<br>
+          As recommended by the tutorial, I used PyCharm, which is a Python IDE by Jetbrains. Image processing is better optimized with OpenCV compared to the p5.js filters I mostly wrote myself.
+          By the end of the project, with all the filters I could fit running at the same time, the application still ran at around 15FPS, which was a lot better than the p5.js version.
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <h4>Experimentation</h4>
+        <video width="716" height="402" autoplay muted controls loop>
+          <source src="resources/Experimentation.mp4" type="video/mp4">
+          Your browser does not support this video.
+        </video>
+        <div class="descriptionText">
+          After finishing the tutorial, I started experimenting more with different filters and effects, and trying to add some sort of interactivity with the effects.
+          I used face detection with Haar Cascades, then changed the position or strength of many filters depending on the X or Y position of the person's face from the center of the screen.
+          There were some interesting ways to get around issues. For example, some effects that would adjust the position or rotation of the video from the input video needed something outside the borders.
+          I mirrored the video outside the borders so that the space outside wouldn't just be black. 
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <h4>Face Stabilisation</h4>
+        <div>
+          <video width="716" height="402" autoplay muted controls loop>
+            <source src="resources/faceStabilisation.mov" type="video/mp4">
+            Your browser does not support this video.
+          </video>
+        </div>
+        <div>
+          <img src="resources/faces1.png" alt="faces1" width="715" height="112" style="vertical-align: top; margin-top: 5px; margin-right: 2px">
+          <img src="resources/faces2.png" alt="faces2" width="337" height="86" style="vertical-align: top; margin-top: 5px; margin-right: 2px">
+          <img src="resources/faces3.png" alt="faces3" width="376" height="42" style="vertical-align: top; margin-top: 5px; margin-right: 2px">
+        </div>
+        <div class="descriptionText">
+          One issue that stuck out because it took so long to fix was an issue where the person's face isn't completely still, as seen in the video. 
+          Any effects that are sensitive to small changes in the position of the face would jitter a lot. 
+          I fixed this by averaging the position of the person's face with the past few frames. This would help smooth the position of the face a lot, and eliminate jiters.<br>
+          Another issue was the face detection would sometimes detect other faces in the background, but I only wanted to focus on one face, the main person interacting with the project. 
+          I fixed this by comparing the sizes of each of the faces detected and only using the largest face, which would, in most cases, be the closest face interacting with the project.
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <h4>Final Result</h4>
+        <video width="896" height="250" autoplay muted controls loop>
+          <source src="resources/FinalResult.mov" type="video/mp4">
+          Your browser does not support this video.
+        </video>
+        <img src="resources/coolEffect.png" alt="coolEffect" width="896" height="252">
+        <div class="descriptionText">
+          Here is the final result that I ended this project on. <br>
+          On the left, the R, G, and B values shift at different speeds from the center as the person moves. 
+          They also each have different effects like blur, canny outline, and varying strengths in their output. <br>
+          The filter on the right also has the same effects in terms of the R, G, and B filters. But, the person is always centered. <br>
+          The image below is an interesting effect produced when there is a face detected where there is none. Having my face there makes it more interesting as my face is no longer centered.
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <h4>Future Development</h4>
+        <img src="resources/distortion2.png" alt="distortion2" width="1000" height="249">
+        <a href="https://observablehq.com/@kerryrodden/image-distortion-with-perlin-noise" target="_blank"><img src="resources/distortion1.png" alt="distortion1" width="883" height="492"></a>
+        <div class="descriptionText">
+          I could develop this project further by exploring more complicated ways to change the images. One filter I really liked from the Filter Forge experimentation with Carl was a distortion filter.
+          Unfortunately I couldn't find a source on how to recreate this effect that I could understand, so I didn't include it in my initial project. <br>
+          I could also develop this project further by trying to make AR face filters like the ones that can be found in Snapchat and Instagram.
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12">
+        <h4>Additional comments</h4>
+        <div class="descriptionText">
+          This project was really fun to experiment with and I learned a lot about working with OpenCV. Working on this project also helped me brush up on my Python programming skills.
+          I probably will work with OpenCV again the future so this project will be good to refer back to. 
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div></div>
+  </footer>
+  <!-- <div><iframe src="https://drive.google.com/file/d/1abC488Ekj7RWE06sqOykEFvv8wjvtHXn/preview" width="1280" height="720"></iframe></div> need to change size depending on screen size -->
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="../../js/jquery-3.5.1.min.js"></script>
+  <script src="../../js/bootstrap.min.js"></script>
+  <script src="../../js/script.js"></script>
+</body>
+</html>

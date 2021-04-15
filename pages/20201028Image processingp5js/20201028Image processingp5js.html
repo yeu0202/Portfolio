@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kelvin's Portfolio</title>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/styles.css">
+
+    <!-- processing files -->
+    <script language="javascript" type="text/javascript" src="ImageProcessing/libraries/p5.min.js"></script>
+    <script language="javascript" type="text/javascript" src="ImageProcessing/libraries/clmtrackr.min.js"></script>
+    <script src="ImageProcessing/my_files/js/my_p5.js"></script>
+    <link rel="stylesheet" href="ImageProcessing/my_files/css/my_css.css"/>
+    
+  </head>
+<body>
+  <header id="back_to_top">
+    <nav id="header-nav" class="navbar navbar-expand-lg navbar-light"> <!--navbar-expand-sm is to show in xs only-->
+      <a class="navbar-brand" href="../../index.html"><h1>Kelvin Yeung</h1></a>
+
+      <button id="menu_button" type="button" class="navbar-toggler" data-toggle="collapse" data-target="#collapsable_nav" aria-controls="collapsable_nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="line_container">
+            <span class="line"></span> 
+            <span class="line"></span> 
+            <span class="line"></span>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="collapsable_nav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a id="Chicken_nav" class="nav-link text-center" href="#chicken_row">Chicken</a>
+          </li>
+          <li class="nav-item text-center">
+            <a id="Beef_nav" class="nav-link" href="#beef_row">Beef</a>
+          </li>
+          <li class="nav-item text-center">
+            <a id="Sushi_nav" class="nav-link" href="#sushi_row">Sushi</a>
+          </li>
+        </ul>
+      </div> <!--navigation menu-->
+    </nav> <!--header-nav-->
+  </header>
+  
+  <div class="container-fluid">
+    <div class="row">
+      <h2 class="col-xs-12 col-sm-12 col-md-12">Image Processing with p5.js</h2>
+    </div>
+    <div class="row">
+      <h3 class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        This was part of the Small Object of Delight project I did for Magnus's class. I used p5.js to create a series of camera filters. <br>
+        The code is probably terribly inefficient because I wrote the filters myself, and I used a weird way to store the functions (putting them in an array). <br>
+        Github link: <a href="https://yeu0202.github.io/Processing_0/ImageProcessing/">https://yeu0202.github.io/Processing_0/ImageProcessing/</a>
+      </h3>
+    </div>
+    
+
+
+    <iframe src="ImageProcessing/index.html" onload="this.insertAdjacentHTML('afterend', (this.contentDocument.body||this.contentDocument).innerHTML);this.remove()"></iframe>
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12">
+        <h4>Additional comments</h4>
+        <!-- <img src="resources/qualityChange.png" alt="original image" width="801.5" height="620"> -->
+        <div class="descriptionText">
+          In the end, this method of creating and messing around with camera filters was discarded because the frame rate was horrendous, especially for some more intensive filters. 
+          Nonetheless, this part of the project was fun as I learned how some filters work on the pixel level. 
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div></div>
+  </footer>
+  <!-- <div><iframe src="https://drive.google.com/file/d/1abC488Ekj7RWE06sqOykEFvv8wjvtHXn/preview" width="1280" height="720"></iframe></div> need to change size depending on screen size -->
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="../../js/jquery-3.5.1.min.js"></script>
+  <script src="../../js/bootstrap.min.js"></script>
+  <script src="../../js/script.js"></script>
+</body>
+</html>

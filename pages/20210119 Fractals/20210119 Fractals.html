@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kelvin's Portfolio</title>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/styles.css">
+    
+  </head>
+<body>
+  <header id="back_to_top">
+    <nav id="header-nav" class="navbar navbar-expand-lg navbar-light"> <!--navbar-expand-sm is to show in xs only-->
+      <a class="navbar-brand" href="../../index.html"><h1>Kelvin Yeung</h1></a>
+
+      <button id="menu_button" type="button" class="navbar-toggler" data-toggle="collapse" data-target="#collapsable_nav" aria-controls="collapsable_nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="line_container">
+            <span class="line"></span> 
+            <span class="line"></span> 
+            <span class="line"></span>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="collapsable_nav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a id="Chicken_nav" class="nav-link text-center" href="#chicken_row">Chicken</a>
+          </li>
+          <li class="nav-item text-center">
+            <a id="Beef_nav" class="nav-link" href="#beef_row">Beef</a>
+          </li>
+          <li class="nav-item text-center">
+            <a id="Sushi_nav" class="nav-link" href="#sushi_row">Sushi</a>
+          </li>
+        </ul>
+      </div> <!--navigation menu-->
+    </nav> <!--header-nav-->
+  </header>
+  
+  <div class="container-fluid">
+    <div class="row">
+      <h2 class="col-xs-12 col-sm-12 col-md-12">Fractals</h2>
+    </div>
+    <div class="row">
+      <h3 class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        I did a mini research presentation for Magnus's class on Fractals. I also made a dragon fractal visualization using OpenCV in Python previously, and used it in this presentation. 
+      </h3>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <h4>Presentation Screenshots</h4>
+        <img src="resources/slide1.png" alt="slide1" width="766" height="430" style="margin-bottom: 5px">
+        <img src="resources/slide2.png" alt="slide2" width="766" height="430" style="margin-bottom: 5px">
+        <img src="resources/slide3.png" alt="slide3" width="766" height="430" style="margin-bottom: 5px">
+        <img src="resources/slide4.png" alt="slide4" width="766" height="430" style="margin-bottom: 5px">
+        <img src="resources/slide5.png" alt="slide5" width="766" height="430" style="margin-bottom: 5px">
+        <div class="descriptionText">
+          These are some screenshots from the presentation, I basically introduced fractals to the rest of the class and showed a few examples.
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <h4>Dragon Fractal</h4>
+        <span><video width="696" height="440" style="vertical-align: text-top" autoplay muted controls loop>
+          <source src="resources/DragonFractals.mov" type="video/mp4">
+          Your browser does not support this video.
+        </video></span>
+        <span><img src="resources/codeScreenshot.png" alt="codeScreenshot" width="856" height="400" style="vertical-align: text-top"></span>
+        <div class="descriptionText">
+          Here is the dragon fractal visualization I made using OpenCV in Python. I used a class that would split a line object into two lines every loop. 
+          This isn't a very good way to create fractals as the number of objects multiplied by two every loop, which resulted in long load times after several iterations. <br>
+          I have uploaded this <a href="https://github.com/yeu0202/dragonFractal" target="_blank">Python code onto github</a>.
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12">
+        <h4>Additional comments</h4>
+        <div class="descriptionText">
+          I might improve the dragon fractal visualization in the future as this visualization has long load times past 15 iterations. 
+          I will definitely explore fractals more in the future as they fascinate me and also look amazing.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div></div>
+  </footer>
+  <!-- <div><iframe src="https://drive.google.com/file/d/1abC488Ekj7RWE06sqOykEFvv8wjvtHXn/preview" width="1280" height="720"></iframe></div> need to change size depending on screen size -->
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="../../js/jquery-3.5.1.min.js"></script>
+  <script src="../../js/bootstrap.min.js"></script>
+  <script src="../../js/script.js"></script>
+</body>
+</html>

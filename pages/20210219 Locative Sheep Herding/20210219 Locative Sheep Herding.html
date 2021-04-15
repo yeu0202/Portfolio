@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kelvin's Portfolio</title>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/styles.css">
+    
+  </head>
+<body>
+  <header id="back_to_top">
+    <nav id="header-nav" class="navbar navbar-expand-lg navbar-light"> <!--navbar-expand-sm is to show in xs only-->
+      <a class="navbar-brand" href="../../index.html"><h1>Kelvin Yeung</h1></a>
+
+      <button id="menu_button" type="button" class="navbar-toggler" data-toggle="collapse" data-target="#collapsable_nav" aria-controls="collapsable_nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="line_container">
+            <span class="line"></span> 
+            <span class="line"></span> 
+            <span class="line"></span>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="collapsable_nav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a id="Chicken_nav" class="nav-link text-center" href="#chicken_row">Chicken</a>
+          </li>
+          <li class="nav-item text-center">
+            <a id="Beef_nav" class="nav-link" href="#beef_row">Beef</a>
+          </li>
+          <li class="nav-item text-center">
+            <a id="Sushi_nav" class="nav-link" href="#sushi_row">Sushi</a>
+          </li>
+        </ul>
+      </div> <!--navigation menu-->
+    </nav> <!--header-nav-->
+  </header>
+  
+  <div class="container-fluid">
+    <div class="row">
+      <h2 class="col-xs-12 col-sm-12 col-md-12">Locative Sheep Herding</h2>
+    </div>
+    <div class="row">
+      <h3 class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        This was a small project I did for Magnus's Locative Media mini project. We basically had a week to make a small locative project. 
+        I decided to try making an augmented reality sheep herding game. This game idea is simple but I would need to learn quite a bit to be able to implement it in AR.
+      </h3>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
+        <h4>Project Video</h4>
+        <iframe width="960" height="540" src="https://www.youtube-nocookie.com/embed/Y9shEXmSUa0" 
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="descriptionText">
+          First, I made a simple sheep herding game in Python on a 2d screen. This allowed me to figure out the logic behind the game before implementing it in AR. <br>
+          Then, I experimented with AR in Unity. I spent a lot of time trying to place objects properly, and place them where I wanted them. 
+          A lot of time was spent testing, as each time I wanted to test the program I had to upload it to my phone and compilation took several minutes. 
+          After a lot of adjusting numbers and objects, I was able to get a general flexible play area generate with a single tap on the screen. 
+          After being able to get all the objects generate properly, I was then able to translate the sheep herding game I made in Python to C# in Unity. 
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12">
+        <h4>Additional comments</h4>
+        <div class="descriptionText">
+          I think spending the time to figure out the logic in Python helped me save a lot of experimentation time in Unity. 
+          When importing the code to Unity, I already knew the code would work, and saved myself the time needed to compile the program and test the edge cases.
+          I uploaded both the <a href="https://github.com/yeu0202/Sheep-herding" target="_blank">Python game</a> and the <a href="https://github.com/yeu0202/ARSheepHerding" target="_blank">AR Unity game</a> onto github.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div></div>
+  </footer>
+  <!-- <div><iframe src="https://drive.google.com/file/d/1abC488Ekj7RWE06sqOykEFvv8wjvtHXn/preview" width="1280" height="720"></iframe></div> need to change size depending on screen size -->
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="../../js/jquery-3.5.1.min.js"></script>
+  <script src="../../js/bootstrap.min.js"></script>
+  <script src="../../js/script.js"></script>
+</body>
+</html>

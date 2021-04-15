@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kelvin's Portfolio</title>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/styles.css">
+    
+  </head>
+<body>
+  <header id="back_to_top">
+    <nav id="header-nav" class="navbar navbar-expand-lg navbar-light"> <!--navbar-expand-sm is to show in xs only-->
+      <a class="navbar-brand" href="../../index.html"><h1>Kelvin Yeung</h1></a>
+
+      <button id="menu_button" type="button" class="navbar-toggler" data-toggle="collapse" data-target="#collapsable_nav" aria-controls="collapsable_nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="line_container">
+            <span class="line"></span> 
+            <span class="line"></span> 
+            <span class="line"></span>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="collapsable_nav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a id="Chicken_nav" class="nav-link text-center" href="#chicken_row">Chicken</a>
+          </li>
+          <li class="nav-item text-center">
+            <a id="Beef_nav" class="nav-link" href="#beef_row">Beef</a>
+          </li>
+          <li class="nav-item text-center">
+            <a id="Sushi_nav" class="nav-link" href="#sushi_row">Sushi</a>
+          </li>
+        </ul>
+      </div> <!--navigation menu-->
+    </nav> <!--header-nav-->
+  </header>
+  
+  <div class="container-fluid">
+    <div class="row">
+      <h2 class="col-xs-12 col-sm-12 col-md-12">Filter Forge</h2>
+    </div>
+    <div class="row">
+      <h3 class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        This was a class taught by Carl where students experimented with Filter Forge, an image filter software. <br>
+        Filter Forge allows you to mix image filter inputs and outputs around to create all kinds of results.<br>
+      </h3>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-4">
+        <h4>Source Image</h4>
+        <img src="resources/IMG_5745_small.png" alt="Source Image" width="400" height="400">
+        <div class="descriptionText">
+          This is the source image that I used as an input.
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-5">
+        <h4>Filter 1</h4>
+        <img src="resources/image1.png" alt="image 1" width="400" height="400">
+        <div class="descriptionText">
+          In the first filter I processed the image 3 times. I used the edge detection, noise distortion, and offset filters.<br>
+          Then the R, G, B values were extracted from the filters and put together to form the final image.
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-7">
+        <h4>Filter Forge layout</h4>
+        <img src="resources/image1ff.png" alt="image 1 ff" width="739" height="400">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-5">
+        <h4>Filter 2</h4>
+        <img src="resources/image2.png" alt="image 2" width="400" height="400">
+        <div class="descriptionText">
+          With the second filter I turned off the offset filter from the first set of filters just to overlay the RGB results.<br>
+          This resulted in a pretty nice output, the 3 filters overlap but don't mix so you can still see the 3 distinct filter outputs.
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-7">
+        <h4>Filter Forge layout</h4>
+        <img src="resources/image2ff.png" alt="image 2 ff" width="739" height="400">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-5">
+        <h4>Filter 3</h4>
+        <img src="resources/image3.png" alt="image 3" width="400" height="400">
+        <div class="descriptionText">
+          With this filter I used the edge detection and noise distortion outputs but instead of reassembling the output into RGB, I used HSB.
+          I output the edge detection into Saturation and noise distortion into Brightness.
+          This created a pretty cool and interesting effect.
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-7">
+        <h4>Filter Forge layout</h4>
+        <img src="resources/image3ff.png" alt="image 3 ff" width="739" height="400">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-5">
+        <h4>Filter 4</h4>
+        <img src="resources/image4.png" alt="image 4" width="400" height="400">
+        <div class="descriptionText">
+          This image was made by splitting the image's RGB values and inputting the B value from the image into the H value of HSV. <br>
+          I like this effect because it is simple but also looks beautiful. 
+          I also instantly recognized that the colors it has looks similar to the <a href="https://en.wikipedia.org/wiki/Nobody%27s_Love" target="_blank">album cover of Nobody's Love by Maroon 5</a>.
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-7">
+        <h4>Filter Forge layout</h4>
+        <img src="resources/image4ff.png" alt="image 4 ff" width="739" height="400">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-5">
+        <h4>Filter 5</h4>
+        <img src="resources/image5.png" alt="image 5" width="400" height="400">
+        <div class="descriptionText">
+          This filter is slightly more complicated. 
+          I mixed the RGB and HSV outputs after passing the original image through the edge detection and noise distortion filters.
+          I messed around with the inputs and outputs until I got a result I liked, which is why there is a hanging "Assemble LAB" function.
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-7">
+        <h4>Filter Forge layout</h4>
+        <img src="resources/image5ff.png" alt="image 5 ff" width="739" height="400">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-5">
+        <h4>Filter 6</h4>
+        <img src="resources/image6.png" alt="image 6" width="400" height="400">
+        <div class="descriptionText">
+          This last filter was made with the help of the 3-color gradient filter. 
+          I don't quite understand what it does but I liked the effect so I saved it.
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-7">
+        <h4>Filter Forge layout</h4>
+        <img src="resources/image6ff.png" alt="image 6 ff" width="739" height="400">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12">
+        <h4>Additional comments</h4>
+        <div class="descriptionText">
+          I liked playing around with Filter Forge, it's pretty fun to mess around with filters until you get a result that you like. <br>
+          I would like to play around with mixing filter inputs and outputs more in the future to create pretty images.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div></div>
+  </footer>
+  <!-- <div><iframe src="https://drive.google.com/file/d/1abC488Ekj7RWE06sqOykEFvv8wjvtHXn/preview" width="1280" height="720"></iframe></div> need to change size depending on screen size -->
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="../../js/jquery-3.5.1.min.js"></script>
+  <script src="../../js/bootstrap.min.js"></script>
+  <script src="../../js/script.js"></script>
+</body>
+</html>

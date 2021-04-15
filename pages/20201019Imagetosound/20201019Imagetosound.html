@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kelvin's Portfolio</title>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/styles.css">
+    
+  </head>
+<body>
+  <header id="back_to_top">
+    <nav id="header-nav" class="navbar navbar-expand-lg navbar-light"> <!--navbar-expand-sm is to show in xs only-->
+      <a class="navbar-brand" href="../../index.html"><h1>Kelvin Yeung</h1></a>
+
+      <button id="menu_button" type="button" class="navbar-toggler" data-toggle="collapse" data-target="#collapsable_nav" aria-controls="collapsable_nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="line_container">
+            <span class="line"></span> 
+            <span class="line"></span> 
+            <span class="line"></span>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="collapsable_nav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a id="Chicken_nav" class="nav-link text-center" href="#chicken_row">Chicken</a>
+          </li>
+          <li class="nav-item text-center">
+            <a id="Beef_nav" class="nav-link" href="#beef_row">Beef</a>
+          </li>
+          <li class="nav-item text-center">
+            <a id="Sushi_nav" class="nav-link" href="#sushi_row">Sushi</a>
+          </li>
+        </ul>
+      </div> <!--navigation menu-->
+    </nav> <!--header-nav-->
+  </header>
+  
+  <div class="container-fluid">
+    <div class="row">
+      <h2 class="col-xs-12 col-sm-12 col-md-12">Image to Sound</h2>
+    </div>
+    <div class="row">
+      <h3 class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        This was a class taught by Carl where students experimented with converting images to sound files and back. <br/>
+        A filter or effect was applied on the sound file before converting it back to an image.<br/>
+        Software used was Adobe Photoshop and Adobe Audition.
+      </h3>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <h4>Original Image</h4>
+        <img src="resources/Original photo.JPG" alt="original image" width="393" height="698">
+        <div class="descriptionText">
+          Picture I took at a squash court in the NUS.
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-4">
+        <h4>Grayscale Image</h4>
+        <img src="resources/Court.bmp" alt="grayscale image" width="393" height="698">
+        <div class="descriptionText">
+          Image in grayscale, as it was easier to work with sound in grayscale.
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-4">
+        <h4>Echo effect</h4>
+        <img src="resources/Court_echo.bmp" alt="echo image" width="393" height="698">
+        <div class="descriptionText">
+          You can see elements of the image 'echoed' horizontally.
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-4">
+        <h4>Invert and Minus 10db</h4>
+        <img src="resources/Court_InvertAndMinus10db.bmp" alt="invert and minus 10db image" width="393" height="698">
+        <div class="descriptionText">
+          The sound was inverted, which inverted the colors in the image. <br/>
+          The minus 10db effect removed some detail as it probably shifted all the values closer to one end.
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-4">
+        <h4>Flanger</h4>
+        <img src="resources/Court_Flanger.bmp" alt="flanger image" width="393" height="698">
+        <div class="descriptionText">
+          The flanger effect in sound mixes the same signal with itself but one is slightly delayed with a changing period.<br/>
+          These can be noticed in the triangles behind some lines in the image. <br/>
+          I think that the height of a triangle might have something to do with the way sound is sampled.
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-4">
+        <h4>Phaser</h4>
+        <img src="resources/Court_Phaser.bmp" alt="phaser image" width="393" height="698">
+        <div class="descriptionText">
+          The phaser filters the signal by creating some peaks and troughs in the frequency spectrum.<br/>
+          This image mostly looks like the original grayscale image but there is some distortion which is more noticable at harder edges.
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-4">
+        <h4>Phaser Zed Leppelin</h4>
+        <img src="resources/Court_PhaserZedLeppelin.bmp" alt="phaser zed leppelin image" width="393" height="698">
+        <div class="descriptionText">
+          The phaser filters the signal by creating some peaks and troughs in the frequency spectrum.<br/>
+          This phaser filter is a lot stronger than the default one.<br/>
+          There seems to be some sort of echo effect built into the phaser effect.
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-4">
+        <h4>Low Pass Filter</h4>
+        <img src="resources/Court_RemovedHighFrequency.bmp" alt="Removed high frequency image" width="393" height="698">
+        <div class="descriptionText">
+          I removed high frequency sounds using a low pass filter.<br/>
+          I expected the image to come out with some thin lines removed/blurred. <br/>
+          While this has happened on the person and the edges of the court glass boundaries, there are some grainy artefacts on the walls and the floor that I didn't expect.
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-4">
+        <h4>Low Pass Filter 2</h4>
+        <img src="resources/Court_RemovedHighFrequency2.bmp" alt="Removed high frequency image 2" width="393" height="698">
+        <div class="descriptionText">
+          This image was processed through a stronger low pass filter. <br/>
+          Both the blurring that was expected and the artefacts are stronger.<br/>
+          I find this effect pretty interesting, further investigation will be needed to understand why the artefacts happen.
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12">
+        <h4>Additional comments</h4>
+        <!-- <img src="resources/qualityChange.png" alt="original image" width="801.5" height="620"> -->
+        <div class="descriptionText">
+          There are plenty of other audio filters out there to test. It would be nice if there was an easy way to process colour images that makes sense. 
+          I'm sure that can be done with a bit of programming to process the images into audio files and back in the way I want.
+          <br>
+          It would also be interesting to see if you could turn audio data into images and put an image filter over them, then convert them back. 
+          One issue with that is that it might be harder to detect the subtle changes in sound.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div></div>
+  </footer>
+  <!-- <div><iframe src="https://drive.google.com/file/d/1abC488Ekj7RWE06sqOykEFvv8wjvtHXn/preview" width="1280" height="720"></iframe></div> need to change size depending on screen size -->
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="../../js/jquery-3.5.1.min.js"></script>
+  <script src="../../js/bootstrap.min.js"></script>
+  <script src="../../js/script.js"></script>
+</body>
+</html>

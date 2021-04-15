@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kelvin's Portfolio</title>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/styles.css">
+    
+  </head>
+<body>
+  <header id="back_to_top">
+    <nav id="header-nav" class="navbar navbar-expand-lg navbar-light"> <!--navbar-expand-sm is to show in xs only-->
+      <a class="navbar-brand" href="../../index.html"><h1>Kelvin Yeung</h1></a>
+
+      <button id="menu_button" type="button" class="navbar-toggler" data-toggle="collapse" data-target="#collapsable_nav" aria-controls="collapsable_nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="line_container">
+            <span class="line"></span> 
+            <span class="line"></span> 
+            <span class="line"></span>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="collapsable_nav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a id="Chicken_nav" class="nav-link text-center" href="#chicken_row">Chicken</a>
+          </li>
+          <li class="nav-item text-center">
+            <a id="Beef_nav" class="nav-link" href="#beef_row">Beef</a>
+          </li>
+          <li class="nav-item text-center">
+            <a id="Sushi_nav" class="nav-link" href="#sushi_row">Sushi</a>
+          </li>
+        </ul>
+      </div> <!--navigation menu-->
+    </nav> <!--header-nav-->
+  </header>
+  
+  <div class="container-fluid">
+    <div class="row">
+      <h2 class="col-xs-12 col-sm-12 col-md-12">Terragen</h2>
+    </div>
+    <div class="row">
+      <h3 class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        This was a class taught by Carl where students experimented with Terragen, a realistic terrain generator. <br>
+        It uses perlin noise to generate everything. You can then edit the look of the terrain through some built in functions. <br>
+        I first experimented with creating a nice landscape and making it look nice. <br>
+        Carl also suggested that we could upload our own images as a terrain, which I did in the last image.
+      </h3>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+        <h4>Terrain 1</h4>
+        <img src="resources/terragen render 2_sunset-big.bmp" alt="terrain 1" width="512" height="384">
+        <div class="descriptionText">
+          First image I exported after being somewhat satisfied with the result. 
+          The snow, rocks, greenery, sand was all coloured on based on inserted parameters.
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+        <h4>Terrain 1, blue sky</h4>
+        <img src="resources/terragen render 2-big.bmp" alt="terrain 1, blue sky" width="512" height="384">
+        <div class="descriptionText">
+          Here I colored the sky blue to get a more natural look.
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+        <h4>Terrain 1, sunset</h4>
+        <img src="resources/terragen render 2_sunset_2-big.bmp" alt="terrain 1, sunset" width="512" height="384">
+        <div class="descriptionText">
+          I tried to make the sky look like a sunset because I thought making a nice sunset would look nice. 
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+        <h4>Terrain 1, sunset 2</h4>
+        <img src="resources/terragen render 2_sunset_3-big.bmp" alt="terrain 1, sunset 2" width="512" height="384">
+        <div class="descriptionText">
+          Here I changed the clouds, this actually took some time as there are a lot of parameters to cloud generation.
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+        <h4>Terrain 1, sunset 3</h4>
+        <img src="resources/terragen render 2_sunset_4-big.bmp" alt="terrain 1, sunset 3" width="512" height="384">
+        <div class="descriptionText">
+          I moved the sun into the field of view and angled it so it would only shine onto some sections of the mountains.
+          I liked the effect the sun gives in this image, you can see the sun rays and the reflection in the water also looks very nice.
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+        <h4>Terrain 1, sunset 4</h4>
+        <img src="resources/terragen render 2_sunset_4-big.bmp" alt="terrain 1, sunset 4" width="512" height="384">
+        <div class="descriptionText">
+          Here I just angled the sun to another position to get a sunset from a different angle.
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+        <h4>Source image</h4>
+        <img src="resources/me5.png" alt="Source image" width="454" height="383">
+        <div class="descriptionText">
+          Here is the source image I used for generating terrain with a source image. 
+          The image has to be in a .tga format, which I converted my image to using photoshop. <br>
+          (HTML doesn't support tga images so this image is a png)
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+        <h4>Image terrain</h4>
+        <img src="resources/terragen me_2-big.bmp" alt="image terrain" width="512" height="384">
+        <div class="descriptionText">
+          This is the terrain I made using the image.
+          I basically used the colors of the rainbow to indicate the height of the terrain.
+          This allowed me to actually see some resemblance to the source image. 
+          The red bar at the top is a result of the source image and terrain dimensions being different.<br>
+          At "ground" level, the terrain is extremely rough and has lots of towers and pits due to the noise in the image.
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12">
+        <h4>Additional comments</h4>
+        <div class="descriptionText">
+          This exercise was an interesting insight into how terrain can be generated. The terrain generated using perlin noise looked very realistic. 
+          It was also pretty fun to see how an image can look like as terrain.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div></div>
+  </footer>
+  <!-- <div><iframe src="https://drive.google.com/file/d/1abC488Ekj7RWE06sqOykEFvv8wjvtHXn/preview" width="1280" height="720"></iframe></div> need to change size depending on screen size -->
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="../../js/jquery-3.5.1.min.js"></script>
+  <script src="../../js/bootstrap.min.js"></script>
+  <script src="../../js/script.js"></script>
+</body>
+</html>
