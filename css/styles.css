@@ -1,8 +1,10 @@
 body {
     font-size: 16px;
-    background-color: #e8feff;
+    /* background-color: #e8feff; */
+    background-color: #e9ffe8;
     font-family: 'Roboto', sans-serif;
 }
+
 
 
 /* body */
@@ -56,8 +58,9 @@ footer{
     margin-bottom: 10px;
 }
 .navbar-brand h1{
-    color: #00115f;
+    color: #000000;
     font-size: 2.5em;
+    font-family: 'Roboto', sans-serif;
 }
 .navbar-brand a:hover, .navbar-brand a:focus{
     text-decoration: none;
@@ -114,4 +117,8 @@ ul li a{
     height: 2px;
     background-color: rgba(0, 17, 95, 0.3);
     margin-top: 6px;
+}
+
+video{
+    margin-bottom: 10px;
 }

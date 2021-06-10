@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kelvin's Portfolio</title>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/styles.css">
+    
+  </head>
+<body>
+  <header id="back_to_top">
+    <nav id="header-nav" class="navbar navbar-expand-lg navbar-light"> 
+      <a class="navbar-brand" href="../../index.html"><h1>Kelvin Yeung</h1></a>
+
+      <!-- <button id="menu_button" type="button" class="navbar-toggler" data-toggle="collapse" data-target="#collapsable_nav" aria-controls="collapsable_nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="line_container">
+            <span class="line"></span> 
+            <span class="line"></span> 
+            <span class="line"></span>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="collapsable_nav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a id="Chicken_nav" class="nav-link text-center" href="#chicken_row">Chicken</a>
+          </li>
+          <li class="nav-item text-center">
+            <a id="Beef_nav" class="nav-link" href="#beef_row">Beef</a>
+          </li>
+          <li class="nav-item text-center">
+            <a id="Sushi_nav" class="nav-link" href="#sushi_row">Sushi</a>
+          </li>
+        </ul>
+      </div>  -->
+    </nav> 
+  </header>
+  
+  <div class="container-fluid">
+    <div class="row">
+      <h2 class="col-xs-12 col-sm-12 col-md-12">Fractal Exploration Project</h2>
+    </div>
+    <div class="row">
+      <h3 class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        This is the Fractal Exploration Project, the Final Project for Magnus's module. I worked on this project with Masha and Paulina. <br>
+        I chose to work on fractals as they fascinated me, and I thought it would be cool if there was a game that could allow the player to just explore them freely. 
+        The three of us created our own fractals separately due to not being in the same place. Then, we combined them into one single application in Unity. <br>
+        I worked on creating a colorful cubic display based off of the concept of Koch fractals. The object would pulse to the sound of the music playing in the background.
+        I also created the player object, which was made of two nested icosahedrons. The icosahedrons would also pulse to the music. 
+        I combined everyone's fractals together into one Unity game, then added some instructions and features like settings and customization to the game.
+
+      </h3>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <h4>Project Video</h4>
+        <iframe width="960" height="540" src="https://www.youtube-nocookie.com/embed/EW-tTgkK1D8" 
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="descriptionText">
+          This is a video that gives an overview of our process and final result of our project. <br>
+          <br>
+          I enjoyed creating the icosahedron, which is actually made up of 20 triangles. I created the icosahedron by using the dihedral angle of an icosahedron, which is the angle between two faces.
+          With specific rotations about the center of the object, the 20 triangles would form an icosahedron. <br>
+          I made some snowflakes by applying the Koch fractal generator script onto a hexagon multiple times. This process allowed me to create a series of different snowflakes by changing a few small values.
+          I also enjoyed making the player controller. 
+          I followed a <a href="https://youtu.be/4HpC--2iowE"></a>simple tutorial by Brackeys</a> and adjusted some settings to create a nice third person controller for our player object.
+          Instead of moving the ball normally, I also changed the code so there is a force applied on the ball from a direction, which would make it roll better. <br>
+          I learned about changing the skybox image in this project, for our skybox image I used a free asset available on the asset store. <br>
+          I also enjoyed receiving feedback from my friends after showing them this project, and adding features based on their responses.
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <h4 class="col-xs-12 col-sm-12 col-md-12">View of the instructions menu and a quick glance of the surroundings</h4>
+      <div><video width="960" height="540" style="vertical-align: text-top" controls>
+        <source src="resources/playerObjectRotate.mov" type="video/mp4">
+        Your browser does not support this video.
+      </video></div>
+    </div>
+    <div class="row">
+      <h4 class="col-xs-12 col-sm-12 col-md-12">View of the cubic structure, snowflakes, and the player object while paused</h4>
+      <div><video width="960" height="540" style="vertical-align: text-top" controls loop>
+        <source src="resources/pausedView.mov" type="video/mp4">
+        Your browser does not support this video.
+      </video></div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <h4>Future Development</h4>
+        <div class="descriptionText">
+          We could definitely develop this project further. The game doesn't feel fully complete yet, and could also use some fine tuning on some of the fractal objects.
+          The game also takes quite a lot of processing power, and it would be nice to be able to optimise it better. 
+          Unfortunately, some of the objects imported from other software created by my groupmates didn't end up as nice as they could have, as some shaders and scripts could not be exported from Blender.
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12">
+        <h4>Additional comments</h4>
+        <div class="descriptionText">
+          I learned a lot about Unity packages and about Unity itself from working on this project. 
+          The cinemachine package was really helpful in making the third person camera, but was also really helpful in implementing some features like the pause camera, changing fov and sensitivity.
+          I didn't have many technical difficulties, and most issues I had were able to be solved quickly through some searches on online forums. <br>
+          I definitely will develop this fractal idea in the future, as I don't think I have explored the full potential of beautiful fractals.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div></div>
+  </footer>
+  <!-- <div><iframe src="https://drive.google.com/file/d/1abC488Ekj7RWE06sqOykEFvv8wjvtHXn/preview" width="1280" height="720"></iframe></div> need to change size depending on screen size -->
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="../../js/jquery-3.5.1.min.js"></script>
+  <script src="../../js/bootstrap.min.js"></script>
+  <script src="../../js/script.js"></script>
+</body>
+</html>
