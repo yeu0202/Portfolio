@@ -67,7 +67,7 @@ h4{
     transform: translate(-50%, -50%);
     font-weight: bold;
     font-size: 1.5em;
-    text-shadow: 1px 3px 5px black;
+    text-shadow: 2px 3px 4px #000, 1px 1px 1px #005e5e, 1px -1px 1px #005e5e, -1px 1px 1px #005e5e, -1px -1px 1px #005e5e;
 }
 
 .previewBox:hover img, .previewBox:focus img{
