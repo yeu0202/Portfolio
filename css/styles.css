@@ -33,13 +33,13 @@ h4{
 }
 
 .previewBox{
+    margin: auto;
     background-color: #000000;
     width: 310px;
     overflow:hidden;
     padding: 0;
     display:block;
     position:relative;
-    float:left;
     margin-bottom: 30px;
 }
 
