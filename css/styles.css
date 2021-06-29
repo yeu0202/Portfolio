@@ -1,7 +1,7 @@
 body {
     font-size: 16px;
     /* background-color: #e8feff; */
-    background-color: #e9ffe8;
+    background-color: #ebffff;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -12,14 +12,13 @@ h3{
     font-size: 1.3rem;
     padding-bottom: 10px;
 }
-/* 
-h3{
-    background-color: #5df7ff2a;
-} */
 
 .container-fluid{
-    padding-left: 35px;
-    padding-right: 35px;
+    background-color: #d3ffff;
+    max-width: 1200px;
+    padding: 30px;
+    margin: auto;
+    margin-bottom: 20px;
 }
 
 .row{
@@ -32,6 +31,52 @@ h4{
 .descriptionText{
     margin-top: 10px;
 }
+
+.previewBox{
+    background-color: #000000;
+    width: 310px;
+    overflow:hidden;
+    padding: 0;
+    display:block;
+    position:relative;
+    float:left;
+    margin-bottom: 30px;
+}
+
+.previewBox img{
+    width: 100%;
+    transition-duration: .3s;
+    max-width: 100%;
+    display:block;
+    overflow:hidden;
+    cursor:pointer;
+}
+
+.previewTitle{
+    position: absolute;
+    display: block;
+    color:white;
+    width: 80%;
+    text-align: center;
+    position: absolute;
+    display: block;
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 1.5em;
+    text-shadow: 1px 3px 5px black;
+}
+
+.previewBox:hover img, .previewBox:focus img{
+  transform: scale(1.2);
+  transition-duration: .3s;
+  filter: grayscale(50%);
+  opacity: .4;
+}
+
 
 /* /body */
 
@@ -61,10 +106,17 @@ footer{
     color: #000000;
     font-size: 2.5em;
     font-family: 'Roboto', sans-serif;
+    transition-duration: .3s;
+}
+
+.navbar-brand h1:hover, navbar-brand h1:focus{
+    color: #005e5e;
+    transition-duration: .3s;
 }
 .navbar-brand a:hover, .navbar-brand a:focus{
     text-decoration: none;
 }
+
 /* to expand the menu items to the edge (there should be a better way to do this)*/
 .navbar{
     padding-left: 0px;
