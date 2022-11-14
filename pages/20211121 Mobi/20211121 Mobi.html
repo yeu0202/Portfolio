@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kelvin's Portfolio</title>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/styles.css">
+    
+  </head>
+<body>
+  <header id="back_to_top">
+    <nav id="header-nav" class="navbar navbar-expand-lg navbar-light"> 
+      <a class="navbar-brand" href="../../index.html"><h1>Kelvin Yeung</h1></a>
+
+      <!-- <button id="menu_button" type="button" class="navbar-toggler" data-toggle="collapse" data-target="#collapsable_nav" aria-controls="collapsable_nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="line_container">
+            <span class="line"></span> 
+            <span class="line"></span> 
+            <span class="line"></span>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="collapsable_nav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a id="Chicken_nav" class="nav-link text-center" href="#chicken_row">Chicken</a>
+          </li>
+          <li class="nav-item text-center">
+            <a id="Beef_nav" class="nav-link" href="#beef_row">Beef</a>
+          </li>
+          <li class="nav-item text-center">
+            <a id="Sushi_nav" class="nav-link" href="#sushi_row">Sushi</a>
+          </li>
+        </ul>
+      </div>  -->
+    </nav> 
+  </header>
+  
+  <div class="container-fluid">
+    <div class="row">
+      <h2 class="col-xs-12 col-sm-12 col-md-12">Mobi</h2>
+    </div>
+    <div class="row">
+      <h3 class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        The <a href="https://play.google.com/store/apps/details?id=com.intractable.CHIKKI&hl=en_GB&gl=US" target="_blank">Mobi</a> project is the first project I worked on in my first job. <a href="https://play.google.com/store/apps/details?id=com.intractable.CHIKKI&hl=en_GB&gl=US" target="_blank">Mobi</a> is an android app made in Unity that combines teaching people how to use phones with a fun game. The game is partially inspired by Pokemon Go. I worked on the game part of the app, with another programmer, a game designer and an artist. <br>
+        For the first few months, I was the main programmer, mostly learning from my boss who was also a programmer but was working on the learningpart of the app. I was able to learn a lot just by working on the project, as different parts of the game required many various techniques to be implemented nicely. Working with another programmer and with a designer led me to structure  aspects of the game so that we can all work on parts of the game separately without having merge conflicts. <br><br>
+        Over the course of this project, I implemented an exp system, inventory with a sorting system, crafting system, missions system with various requirements, settings page, and tweaked a location based map that used the Google Maps SDK for Unity. I also prototyped and built two different games to be used as minigames for this app. Different skins and a micro-transaction based shop system was also added to the game. <br><br>
+        I learned various conventions and techniques to create games in Unity. Learned about how coroutines work, scriptable objects, addressables, split binaries, and different ways to structure a project for better modularity. I also learned quite a few different tools that help enhance an app, for example: lerping, making custom scroll views, dropdown menus, animations, and sound effects.
+      </h3>
+    </div>
+
+    <div class="row">
+      <h4 class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        These screenshots taken from the store page show some sections of the game I worked on.
+      </h4>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+        <h4>GPS Location-Based Map</h4>
+        <img src="resources/mobi1.png" alt="mobi image" width="333" height="592">
+        <div class="descriptionText">
+          The map uses the Google Maps API. I worked on the camera movement, zooming, spawning of collectable items, and the appearance of map structures. 
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+        <h4>Task System and Inventory</h4>
+        <img src="resources/mobi4.png" alt="mobi image" width="333" height="592">
+        <div class="descriptionText">
+          I created most of the task system and inventory system myself. The tasks are generated with random stat requirements, pulling names and descriptions from a Scriptable Object. The bot(s) selected to participate in the task affect the success rate and the speed at which the task is done. <br>
+          The inventory system allows sorting of bots by different stats and the type of bot. They can also be selected on an inventory screen to be enlarged with more detailed stats shown. The bots are stored in a JSON format in a text file in the persistentDataPath. 
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+        <h4>Crafting system</h4>
+        <img src="resources/mobi2.png" alt="mobi image" width="333" height="592">
+        <div class="descriptionText">
+          The crafting system lets the player combine different "heads" and "bodies" of bots to create a full bot. The combined stats of the bot is shown when choosing parts. An optional "core" can also be added to boost the stats even futher. A small animation also plays when the bot is crafted. 
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+        <h4>Catching Minigame</h4>
+        <img src="resources/mobi3.png" alt="mobi image" width="333" height="592">
+        <div class="descriptionText">
+          This is the minigame the user plays to acquire bot parts after finding them on the map. This part of the game is (unnecessarily) in a additive scene. I used an additive scene because I was learning about it and it was also a hack to get around some issues at the time. The game required the player to touch the checkpoints with precise timings, there are three different difficulties based on the type of bot part found on the map. The checkpoints' positions and timings are all randomly generated. 
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+        <h4>Catching Minigame</h4>
+        <div><video width="274" height="592" style="vertical-align: text-top" controls loop>
+          <source src="resources/Menu.mov" type="video/mp4">
+          Your browser does not support this video.
+        </video></div>
+        <div class="descriptionText">
+          This is the newest menu system. It uses a series of coroutines with lerping formulas to create nice fading and movement effects that make the menu feel nicer. 
+        </div>
+      </div>
+    </div>
+
+
+  <footer class="footer">
+    <div></div>
+  </footer>
+  <!-- <div><iframe src="https://drive.google.com/file/d/1abC488Ekj7RWE06sqOykEFvv8wjvtHXn/preview" width="1280" height="720"></iframe></div> need to change size depending on screen size -->
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="../../js/jquery-3.5.1.min.js"></script>
+  <script src="../../js/bootstrap.min.js"></script>
+  <script src="../../js/script.js"></script>
+</body>
+</html>
